@@ -6,7 +6,7 @@ import { MdOutlineWbSunny } from "react-icons/md";
 import "./ThemeToggle.css";
 
 const ThemeToggle = () => {
-  // Initialize theme based on local storage or default to 'light'
+  // Initialize theme based on local storage or default to 'light '
   const [theme, setTheme] = useLocalStorage("theme", "light");
 
   // Apply the theme to the body element
