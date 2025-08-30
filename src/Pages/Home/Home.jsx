@@ -42,16 +42,16 @@ const Home = () => {
     return () => clearInterval(typeInterval);
   }, [wordIndex]);
 
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = process.env.REACT_APP_JIVOCHAT_URL;
-  //   script.async = true;
-  //   document.body.appendChild(script);
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = process.env.REACT_APP_JIVOCHAT_URL;
+    script.async = true;
+    document.body.appendChild(script);
 
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <>
