@@ -183,7 +183,7 @@ const UserStats = () => {
                     <button
                       onClick={() => impersonateUser(_id)}
                       style={{
-                        backgroundColor: "#146356",
+                        backgroundColor: "#1e3a8a",
                         color: "white",
                         padding: "5px",
                         border: "none",
