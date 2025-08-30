@@ -1,0 +1,91 @@
+.sectionTwo {
+  background: var(--section-2-bg);
+  padding: 4rem 2rem;
+}
+
+.sectionTwo-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Makes it stack on small screens */
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.sectionTwo-text h1 {
+  color: var(--section-2-header-text);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sectionTwo-text p {
+  color: var(--section-2-p);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.sectionTwo-link a {
+  color: var(--section-2-header);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid var(--section-2-header);
+  transition: 0.3s ease;
+}
+
+.sectionTwo-link a:hover {
+  color: var(--section-2-header-text);
+  border-color: var(--section-2-header-text);
+}
+
+.sectionTwo-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.sectionTwo .card {
+  background: var(--section-2-card);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: start;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sectionTwo .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.sectionTwo .card .icon {
+  color: var(--section-2-icon-header);
+  margin-bottom: 0.2rem;
+}
+
+.sectionTwo .card h2 {
+  color: var(--section-2-header);
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.sectionTwo .card p {
+  color: var(--section-2-header-p);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .sectionTwo-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .sectionTwo .card {
+    padding: 1.5rem;
+  }
+}

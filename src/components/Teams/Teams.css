@@ -1,0 +1,100 @@
+.teams-section {
+  background: var(--teams-bg);
+  padding: 3rem 1rem;
+}
+
+/* Hero Layout */
+.teams-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.teams-hero-left {
+  display: flex;
+  flex-direction: row; /* put image and text side by side */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.teams-image {
+  width: 250px; /* big image */
+  height: 250px;
+}
+
+.teams-words {
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* align text beside image */
+}
+
+.teams-words p {
+  font-size: 0.9rem; /* make text small */
+  font-weight: 600;
+  color: var(--teams-highlight);
+  margin: 0.2rem 0;
+}
+
+.teams-words p.highlight {
+  color: #e63946; /* red highlight */
+}
+
+/* Content */
+.teams-content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.teams-content h1 {
+  font-size: 1.6rem;
+  color: var(--teams-text-main);
+  margin-bottom: 1rem;
+}
+
+.teams-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--teams-text-sub);
+}
+
+/* Button */
+.teams-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teams-btn {
+  background: var(--teams-btn-bg);
+  color: var(--teams-btn-text);
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.teams-btn:hover {
+  background: var(--teams-btn-bg-hover);
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .teams-hero {
+    grid-template-columns: 1fr; /* stack on mobile */
+    text-align: center;
+  }
+
+  .teams-content {
+    text-align: center;
+  }
+
+  .teams-btn-container {
+    margin-top: 1.5rem;
+  }
+}

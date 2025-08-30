@@ -1,0 +1,94 @@
+.compose-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: var(--login-bg); /* soft neutral */
+  min-height: 100vh;
+}
+
+.compose-card {
+  background: var(--login-bg-card); /* white card */
+  border-radius: 16px;
+  padding: 30px 25px;
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--nav-btns-bor-bottom);
+}
+
+.compose-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--login-bg-h2-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.compose-form .form-group {
+  margin-bottom: 18px;
+}
+
+.compose-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: var(--login-input-text);
+}
+
+.compose-form input,
+.compose-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--login-input-bg-border);
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background: var(--login-input-bg);
+  color: var(--login-input-text);
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.compose-form input:focus,
+.compose-form textarea:focus {
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.2); /* royal blue focus */
+}
+
+.send-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--login-btn-bg);
+  color: var(--login-btn-text);
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.send-btn:hover {
+  background: var(--login-btn-br-hover);
+  color: var(--login-btn-text-hover);
+}
+
+.send-btn:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+.feedback {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.feedback.success {
+  color: var(--admin-card-number); /* gold success */
+}
+
+.feedback.error {
+  color: #e53e3e; /* keep error red */
+}

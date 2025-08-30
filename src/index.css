@@ -1,0 +1,220 @@
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling for the entire page */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+}
+
+:root {
+  /* ================== NAVIGATION ================== */
+  --nav-bg: #f0f4f8; /* Light neutral background */
+  --nav-links: #0a1f44; /* Dark navy for text */
+  --nav-linkss: #1e3a8a; /* Medium royal blue hover */
+  --nav-logo-span: #1e40af; /* Accent blue for branding/logo */
+  --nav-logo: #0a1f44; /* Dark navy logo */
+  --nav-btns-bg: #1e3a8a; /* Royal blue buttons */
+  --nav-btns-text: #ffffff; /* White text */
+  --nav-btns-bg-hover: #1e40af; /* Slightly lighter blue hover */
+  --nav-btns-bg-hovers: #f0f4f8; /* Light hover */
+  --nav-btns-bor-bottom: #cfd8e3;
+
+  /* ================== LOGIN ================== */
+  --login-bg: #f0f4f8;
+  --login-bg-card: #ffffff;
+  --login-bg-h2-color: #1e3a8a;
+  --login-input-text: #0a1f44;
+  --login-input-bg-border: #1e3a8a;
+  --login-input-bg: #ffffff;
+  --login-btn-bg: #1e3a8a;
+  --login-btn-text: #ffffff;
+  --login-btn-br-hover: #1e40af;
+  --login-btn-text-hover: #ffffff;
+  --UserDontHaveAccount-p: #555555;
+  --UserDontHaveAccount: #1e3a8a;
+  --UserDontHaveAccount-hover: #1e40af;
+
+  /* ================== HERO ================== */
+  --hero-text-one: #457cdb;
+  --hero-text-one-span-main: #1e40af;
+  --hero-text-one-span: #1e3a8a;
+  --hero-text-two: #93acd7;
+
+  /* ================== SECTION 2 ================== */
+  --section-2-bg: #f0f4f8;
+  --section-2-header: #3064bd;
+  --section-2-p: #172338;
+  --section-2-icon-header: #3064bd;
+  --section-2-header-text: #1c2535;
+  --section-2-header-p: #1c2535;
+  --section-2-card: #ffffff;
+
+  /* ================== TEAMS ================== */
+  --teams-bg: #0a1931; /* Deep navy (bold background that stands out) */
+  --teams-text-main: #ffffff; /* White for headings (good contrast) */
+  --teams-text-sub: #d1d5db; /* Cool gray for body text */
+  --teams-highlight: #ffd700; /* Gold highlight to grab attention */
+  --teams-btn-bg: #1e3a8a; /* Royal blue button background */
+  --teams-btn-bg-hover: #1e40af; /* Darker royal blue hover */
+  --teams-btn-text: #ffffff; /* White button text */
+
+  /* ================== SECTION 3 ================== */
+  --section-3-bg: #1e3a8a;
+  --section-3-bcard: #0a1f44;
+  --section-3-header: #1e40af;
+  --section-3-p: #f0f4f8;
+  --section-3-btn: #1e3a8a;
+  --section-3-btn-hover: #1e40af;
+  --section-3-btn-text: #ffffff;
+  --section-3-btn-text-hover: #ffffff;
+  --card-image-bg: #ffffff;
+  --card-image-text: #333333;
+
+  /* ================== SECTION 4 ================== */
+  --section-4-bg: #f0f4f8;
+  --section-4-header: #0a1f44;
+  --section-4-card: #ffffff;
+  --section-4-card-icon: #1e3a8a;
+
+  /* ================== SECTION 5 ================== */
+  --section-5-bg: #f0f4f8;
+  --section-5-header: #0a1f44;
+  --section-5-card: #ffffff;
+  --section-5-card-icon: #1e3a8a;
+
+  /* ================== PLANS ================== */
+  --plans-text: #0a1f44;
+  --plan-bg: #ffffff;
+  --plan-title: #1e3a8a;
+  --plan-price: #1e40af;
+  --plan-desc: #555555;
+  --plan-button: #1e3a8a;
+
+  /* ================== WORKFLOW ================== */
+  --workflow-card-bg: #ffffff;
+  --workflow-icon-bg: #1e3a8a;
+  --workflow-title-color: #0a1f44;
+  --workflow-text-color: #333333;
+
+  /* ================== CONTACT US ================== */
+  --Contact-us-bg: #f0f4f8;
+  --big-circle-contact: #1e3a8a;
+
+  /* ================== DASHBOARD ================== */
+  --dashboard-h2: #1e3a8a;
+  --dashboard-name: #0a1f44;
+  --dashboard-name-hover: #1e40af;
+
+  /* ================== PALETTE ================== */
+  --primary-dark: #0a1f44; /* Dark navy */
+  --primary-yellow: #1e3a8a; /* Royal blue */
+  --primary-yellow-alt: #1e40af; /* Lighter royal blue hover */
+  --neutral-light: #f0f4f8;
+  --text-dark: #0a1f44;
+  --text-light: #ffffff;
+
+  --primary-accent: #1e3a8a;
+  --primary-accent-alt: #1e40af;
+
+  /* ================== PERFORMANCE / STATISTICS ================== */
+  --stats-bg: #0a1f44; /* Deep navy background for contrast */
+  --stats-overlay: rgba(
+    14,
+    30,
+    64,
+    0.75
+  ); /* Dark overlay on background image */
+  --stats-number: #ffd700; /* Gold for big numbers (wealth/growth theme) */
+  --stats-text: #ffffff; /* White for titles/text */
+  --stats-subtext: #d1d5db; /* Light gray for subtitles */
+  --stats-border: #1e3a8a; /* Blue accent line under headers */
+
+  /* ================== Faq ================== */
+
+  --faq-bg: #0a1f44; /* Deep navy like stats section */
+  --faq-overlay: rgba(10, 31, 68, 0.9); /* Subtle overlay */
+  --faq-title: #ffffff; /* White for title */
+  --faq-subtitle: #d1d5db; /* Light gray for subtitle */
+  --faq-card-bg: #ffffff; /* White card for contrast */
+  --faq-card-border: #1e3a8a; /* Royal blue border */
+  --faq-question: #0a1f44; /* Dark navy text inside cards */
+  --faq-answer: #333333; /* Neutral gray for answers */
+  --faq-icon: #1e3a8a; /* Accent blue for dropdown icon */
+  --faq-icon-active: #ffd700; /* Gold when active */
+
+  /* ================== ABOUT ================== */
+  --about-bg: #f9fbfe; /* very light blue background */
+  --about-hero-title: #0a1f44; /* dark navy for hero title */
+  --about-hero-text: #1e3a8a; /* medium blue for hero subtitle */
+  --about-section-bg: #ffffff; /* white section background */
+  --about-heading: #1e40af; /* accent blue for section titles */
+  --about-text: #333333; /* neutral dark text */
+  --about-btn-bg: #1e3a8a; /* royal blue button */
+  --about-btn-hover: #1e40af; /* darker hover */
+  --about-btn-text: #ffffff; /* button text white */
+  --about-card-bg: #ffffff; /* mission/vision cards */
+  --about-card-icon: #1e3a8a; /* icons in royal blue */
+  --about-card-text: #555555; /* gray body text */
+
+  /* ================== FOOTER ================== */
+  --footer-bg: #e6f0fa; /* Light blue background */
+  --footer-text: #0a1f44; /* Dark navy text */
+  --footer-heading: #1e3a8a; /* Royal blue for section titles */
+  --footer-link: #1e3a8a; /* Blue links */
+  --footer-link-hover: #1e40af; /* Darker blue hover */
+  --footer-social-icon: #1e3a8a; /* Blue icons */
+  --footer-social-icon-hover: #ffd700; /* Gold hover effect */
+  --footer-copy-text: #555555; /* Subtle gray for copyright */
+
+  /* ================== ADMIN DASHBOARD ================== */
+  --admin-bg: #f0f4f8; /* Borrowed from Section-2 background */
+  --admin-sidebar-bg: #0a1f44; /* Deep navy (Teams / Stats base) */
+  --admin-sidebar-text: #ffffff; /* White for contrast */
+  --admin-sidebar-hover: #1e40af; /* Hover state blue */
+  --admin-sidebar-border: #1e3a8a; /* Accent border */
+
+  --admin-card-bg: #ffffff; /* White cards */
+  --admin-card-title: #1e3a8a; /* Blue headings */
+  --admin-card-text: #333333; /* Neutral text */
+  --admin-card-number: #ffd700; /* Gold for highlight numbers (Stats theme) */
+
+  --admin-link-bg: #1e3a8a; /* Royal blue buttons */
+  --admin-link-hover: #1e40af; /* Darker hover */
+  --admin-link-text: #ffffff; /* White link text */
+
+  --admin-highlight: #ffd700; /* Golden highlight for profit/balance */
+  /* ================== Start inevstemnt ================== */
+
+  --invest-bg: #fefcfb; /* soft off-white */
+  --invest-primary: #0f4c81; /* deep teal blue */
+  --invest-primary-light: #1669a2; /* lighter teal */
+  --invest-accent: #f4a261; /* warm orange accent */
+  --invest-accent-dark: #e76f51; /* stronger coral */
+  --invest-text-dark: #1c1c1c;
+  --invest-text-light: #ffffff;
+  --invest-border: #dcdcdc;
+  --invest-card-bg: #ffffff;
+  --invest-warning: #ffefc5;
+  --invest-warning-border: #e9b949;
+}
+
+[data-theme="dark"] {
+}

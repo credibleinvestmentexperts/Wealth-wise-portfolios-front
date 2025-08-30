@@ -1,0 +1,103 @@
+.investment-fees-container {
+  background: var(--admin-bg);
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.investment-fees-container h2 {
+  color: var(--admin-card-title);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section {
+  background: var(--admin-card-bg);
+  border: 1px solid var(--invest-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out;
+}
+
+.section:hover {
+  transform: translateY(-2px);
+}
+
+.section h3 {
+  color: var(--admin-card-title);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.section label {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--admin-card-text);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.section select,
+.section input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--invest-border);
+  border-radius: 8px;
+  background: var(--login-input-bg);
+  color: var(--login-input-text);
+  outline: none;
+  margin-bottom: 1rem;
+  transition: border 0.2s ease;
+}
+
+.section select:focus,
+.section input:focus {
+  border: 1px solid var(--login-input-bg-border);
+  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.15);
+}
+
+/* Buttons */
+.toggle-btn,
+.fee-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--admin-link-bg);
+  color: var(--admin-link-text);
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn:hover,
+.fee-btn:hover {
+  background: var(--admin-link-hover);
+}
+
+.toggle-btn:disabled,
+.fee-btn:disabled {
+  background: #cfd8e3;
+  cursor: not-allowed;
+}
+
+/* Toastify override (to match theme) */
+.Toastify__toast--success {
+  background: var(--invest-primary);
+  color: var(--invest-text-light);
+  border-left: 6px solid var(--admin-highlight);
+}
+
+.Toastify__toast--error {
+  background: var(--invest-accent-dark);
+  color: var(--invest-text-light);
+  border-left: 6px solid #ff4d4d;
+}

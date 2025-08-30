@@ -1,0 +1,106 @@
+/* ================== WORKFLOW SECTION ================== */
+.workflow {
+  background: var(--section-5-bg);
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.workflow-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--workflow-title-color);
+  margin-bottom: 0.5rem;
+}
+
+.workflow-subtitle {
+  font-size: 1rem;
+  color: var(--workflow-text-color);
+  max-width: 650px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+/* Step Container (Chain Layout) */
+.workflow-web {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Individual Step */
+.workflow-step {
+  background: var(--workflow-card-bg);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  width: 220px;
+  min-height: 220px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workflow-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(30, 58, 138, 0.2);
+}
+
+/* Step Number */
+.workflow-step-number {
+  display: inline-block;
+  background: var(--workflow-icon-bg);
+  color: var(--text-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+/* Step Icon */
+.workflow-icon {
+  font-size: 2rem;
+  color: var(--workflow-icon-bg);
+  margin-bottom: 0.8rem;
+}
+
+/* Step Title */
+.workflow-step h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--workflow-title-color);
+  margin-bottom: 0.6rem;
+}
+
+/* Step Description */
+.workflow-step p {
+  font-size: 0.95rem;
+  color: var(--workflow-text-color);
+  line-height: 1.5;
+}
+
+/* Line Connector */
+.workflow-line {
+  width: 50px;
+  height: 3px;
+  background: var(--workflow-icon-bg);
+  align-self: center;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+/* Responsive Layout */
+@media (max-width: 900px) {
+  .workflow-web {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .workflow-line {
+    width: 3px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,121 @@
+.team-section {
+  background: linear-gradient(135deg, #0a1f44 40%, #1e3a8a 100%);
+  padding: 80px 20px;
+  text-align: center;
+  color: var(--teams-text-main);
+}
+
+.team-header {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: var(--teams-highlight);
+}
+
+.team-subtitle {
+  font-size: 1.2rem;
+  color: var(--teams-text-sub);
+  margin-bottom: 50px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 25px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.team-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 2px solid var(--teams-highlight);
+}
+
+.team-info-inline {
+  flex: 1;
+}
+
+.team-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--teams-text-main);
+}
+
+.team-title {
+  font-size: 1rem;
+  color: var(--teams-text-sub);
+}
+
+.team-icon {
+  color: var(--teams-highlight);
+}
+
+.team-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--teams-text-sub);
+}
+
+/* ================== ANIMATIONS ================== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in-up:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.fade-in-up:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.fade-in-up:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.fade-in-up:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .team-header {
+    font-size: 2rem;
+  }
+  .team-subtitle {
+    font-size: 1rem;
+  }
+  .team-card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,124 @@
+.simple-footer {
+  background: linear-gradient(135deg, var(--footer-bg), #f9fbfd);
+  color: var(--footer-text);
+  padding: 4rem 2rem 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-col {
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-col:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: var(--footer-heading);
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.footer-col h3::after,
+.footer-col h4::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--footer-link);
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.footer-col p {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: var(--footer-text);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-col ul li a {
+  color: var(--footer-link);
+  text-decoration: none;
+  font-size: 0.95rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: var(--footer-link-hover);
+  transition: width 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: var(--footer-link-hover);
+}
+
+.footer-col ul li a:hover::after {
+  width: 100%;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.footer-socials a {
+  font-size: 1.3rem;
+  color: var(--footer-social-icon);
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--footer-social-icon-hover);
+  transform: translateY(-3px) scale(1.1);
+}
+
+.footer-copy {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.85rem;
+  color: var(--footer-copy-text);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .simple-footer {
+    padding: 3rem 1.2rem 1rem;
+  }
+  .footer-col h3,
+  .footer-col h4 {
+    font-size: 1rem;
+  }
+}

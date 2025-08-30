@@ -1,0 +1,44 @@
+/* Loader.css */
+.loader-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--nav-bg);
+}
+
+.dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+.dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 6px solid var(--primary-accent);
+  border-color: var(--primary-accent) transparent var(--primary-accent-alt) transparent;
+  animation: dual-ring-spin 1.2s linear infinite;
+}
+
+@keyframes dual-ring-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--nav-logo); /* black */
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}

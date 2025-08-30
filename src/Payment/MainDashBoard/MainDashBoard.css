@@ -1,0 +1,137 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: var(--admin-bg);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: var(--admin-sidebar-bg);
+  color: var(--admin-sidebar-text);
+  padding: 20px;
+  border-right: 2px solid var(--admin-sidebar-border);
+}
+
+.sidebar .user-block h2 {
+  font-size: 1.4rem;
+  color: var(--admin-highlight);
+  margin-bottom: 0.2rem;
+}
+
+.sidebar .user-block p {
+  font-size: 0.9rem;
+  color: var(--admin-sidebar-text);
+  opacity: 0.8;
+}
+
+.quick-links {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  padding: 12px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.quick-links li:hover {
+  background: var(--admin-sidebar-hover);
+}
+
+/* Main panel */
+.main-panel {
+  flex: 1;
+  padding: 30px;
+}
+
+.top-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.summary-box {
+  background: var(--admin-card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.summary-box h4 {
+  font-size: 1rem;
+  color: var(--admin-card-title);
+  margin-bottom: 0.5rem;
+}
+
+.summary-box p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--admin-card-number);
+}
+
+.activity-log {
+  margin-top: 30px;
+}
+
+/* ================== MEDIA QUERIES ================== */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+    border-right: none;
+    border-bottom: 2px solid var(--admin-sidebar-border);
+  }
+
+  .quick-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .quick-links li {
+    flex: 1 1 45%;
+    margin: 5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .main-panel {
+    padding: 15px;
+  }
+
+  .top-summary {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .summary-box {
+    padding: 15px;
+  }
+
+  .sidebar .user-block h2 {
+    font-size: 1.1rem;
+  }
+
+  .sidebar .user-block p {
+    font-size: 0.8rem;
+  }
+
+  .quick-links li {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+}

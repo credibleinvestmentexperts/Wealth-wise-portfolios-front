@@ -1,0 +1,122 @@
+.plans-wrapper {
+  background: var(--neutral-light);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.plans-hero {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+
+.plans-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--plan-title);
+  margin-bottom: 1rem;
+}
+
+.plans-subtitle {
+  font-size: 1.2rem;
+  color: var(--plan-desc);
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Plan Card */
+.plan-card {
+  background: var(--plan-bg);
+  border-radius: 14px;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0px 4px 12px rgba(10, 31, 68, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 16px rgba(10, 31, 68, 0.15);
+}
+
+/* Header Badge */
+.plan-header {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.plan-percent {
+  background: var(--plan-price);
+  color: var(--text-light);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Body */
+.plan-name {
+  color: var(--plan-title);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.plan-duration {
+  color: var(--plan-desc);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.plan-price {
+  color: var(--plan-price);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.plan-description {
+  color: var(--plan-desc);
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Benefits */
+.plan-benefits {
+  margin-bottom: 1.5rem;
+  padding-left: 1.2rem;
+}
+
+.plan-benefits li {
+  color: var(--plans-text);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  list-style: disc;
+}
+
+/* Footer */
+.plan-footer {
+  text-align: center;
+}
+
+.plan-btn {
+  display: inline-block;
+  background: var(--plan-button);
+  color: var(--text-light);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.plan-btn:hover {
+  background: var(--primary-yellow-alt);
+  transform: translateY(-2px);
+}
