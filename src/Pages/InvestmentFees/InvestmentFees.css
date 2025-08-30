@@ -89,15 +89,3 @@
   cursor: not-allowed;
 }
 
-/* Toastify override (to match theme) */
-.Toastify__toast--success {
-  background: var(--invest-primary);
-  color: var(--invest-text-light);
-  border-left: 6px solid var(--admin-highlight);
-}
-
-.Toastify__toast--error {
-  background: var(--invest-accent-dark);
-  color: var(--invest-text-light);
-  border-left: 6px solid #ff4d4d;
-}
