@@ -24,12 +24,24 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/our-story">Our Story</a></li>
-            <li><a href="/investment-plans">Investment Plans</a></li>
-            <li><a href="/how-it-works">How It Works</a></li>
-            <li><a href="/support">Support</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/license">License</a></li>
+            <li>
+              <a href="/our-story">Our Story</a>
+            </li>
+            <li>
+              <a href="/investment-plans">Investment Plans</a>
+            </li>
+            <li>
+              <a href="/how-it-works">How It Works</a>
+            </li>
+            <li>
+              <a href="/support">Support</a>
+            </li>
+            <li>
+              <a href="/privacy-policy">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/license">License</a>
+            </li>
           </ul>
         </div>
 
@@ -41,23 +53,43 @@ const Footer = () => {
               invest@wealthwiseportfolios.com
             </a>
           </p>
-          <p>Phone: <a href="tel:+17088869524">+1 (708) 886-9524</a></p>
+          <p>
+            Phone: <a href="tel:+13802397291">+1 (380) 239-7291</a>
+          </p>
+
           <p>Address: Denver, CO, USA</p>
 
           <div className="footer-socials">
-            <a href="https://wa.me/17088869524" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://wa.me/13802397291"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaWhatsapp />
             </a>
+
             <a href="https://x.com" target="_blank" rel="noopener noreferrer">
               <FaSquareXTwitter />
             </a>
-            <a href="https://www.facebook.com/share/19bT9TVfWS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/share/19bT9TVfWS/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebook />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin />
             </a>
           </div>
